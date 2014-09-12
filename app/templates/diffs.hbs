@@ -1,0 +1,21 @@
+<div class="container">
+  <h3>Diffs</h3>
+  <div class="row">
+    <div class="col-md-3">
+      {{view Ember.Select
+            content=vendors
+            value=selectedVendor
+      }}
+      {{view Ember.Select
+            content=endpoints
+            value=selectedEndpoint
+      }}
+      <button type="button" class="btn btn-default">The Validator</button>
+    </div>
+
+    <div class="col-md-9">
+      {{outlet}}
+    </div>
+  </div>
+</div>
+

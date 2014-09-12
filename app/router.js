@@ -5,6 +5,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.resource('diffs');
 });
 
 export default Router;
