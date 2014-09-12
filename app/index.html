@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Prototype</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/prototype.css">
+  </head>
+  <body>
+    <script>
+      window.PrototypeENV = {{ENV}};
+      window.EmberENV = window.PrototypeENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/prototype.js"></script>
+    <script>
+      window.Prototype = require('prototype/app')['default'].create(PrototypeENV.APP);
+    </script>
+  </body>
+</html>
